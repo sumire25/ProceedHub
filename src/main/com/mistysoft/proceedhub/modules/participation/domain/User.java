@@ -1,4 +1,4 @@
-package com.mistysoft.eventorfy.modules.participation.domain;
+package com.mistysoft.proceedhub.modules.participation.domain;
 
 public class User {
 }

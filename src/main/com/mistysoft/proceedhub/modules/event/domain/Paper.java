@@ -1,4 +1,4 @@
-package com.mistysoft.eventorfy.modules.event.domain;
+package com.mistysoft.proceedhub.modules.event.domain;
 
 public class Paper {
 }

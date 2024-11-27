@@ -1,4 +1,4 @@
 package com.mistysoft.proceedhub.modules.participation.domain;
 
-public class Registration {
+public interface UserRepository {
 }
