@@ -1,4 +1,5 @@
 package com.mistysoft.proceedhub.modules.participation.domain;
 
-public class Role {
+public enum Role {
+    USER, ADMIN
 }
