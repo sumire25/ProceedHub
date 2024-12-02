@@ -1,8 +1,6 @@
-package com.mistysoft.proceedhub.modules.participation.infrastructure;
+package com.mistysoft.proceedhub.modules.user.infrastructure;
 
-import com.mistysoft.proceedhub.modules.participation.domain.*;
-
-import java.util.stream.Collectors;
+import com.mistysoft.proceedhub.modules.user.domain.*;
 
 public class UserMapper {
 
@@ -10,6 +8,7 @@ public class UserMapper {
         UserEntity entity = new UserEntity();
         entity.setId(user.getId().getValue());
         entity.setUsername(user.getUsername());
+        entity.setEmail(user.getEmail());
         entity.setPassword(user.getPassword());
         entity.setRoles(user.getRoles());
         return entity;
@@ -19,6 +18,7 @@ public class UserMapper {
         return new User(
                 new UserId(entity.getId()),
                 entity.getUsername(),
+                entity.getEmail(),
                 entity.getPassword(),
                 entity.getRoles()
         );

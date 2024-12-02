@@ -1,6 +1,6 @@
-package com.mistysoft.proceedhub.modules.participation.infrastructure;
+package com.mistysoft.proceedhub.modules.user.infrastructure;
 
-import com.mistysoft.proceedhub.modules.participation.domain.Role;
+import com.mistysoft.proceedhub.modules.user.domain.Role;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -14,6 +14,7 @@ public class UserEntity {
     @Id
     private String id;
     private String username;
+    private String email;
     private String password;
 
     @ElementCollection(fetch = FetchType.EAGER)

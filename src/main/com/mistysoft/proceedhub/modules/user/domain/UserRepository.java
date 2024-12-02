@@ -1,4 +1,4 @@
-package com.mistysoft.proceedhub.modules.participation.domain;
+package com.mistysoft.proceedhub.modules.user.domain;
 
 import java.util.Optional;
 

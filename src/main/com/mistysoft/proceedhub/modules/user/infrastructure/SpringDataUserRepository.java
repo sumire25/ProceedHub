@@ -1,4 +1,4 @@
-package com.mistysoft.proceedhub.modules.participation.infrastructure;
+package com.mistysoft.proceedhub.modules.user.infrastructure;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

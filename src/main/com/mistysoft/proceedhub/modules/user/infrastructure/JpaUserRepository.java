@@ -1,6 +1,6 @@
-package com.mistysoft.proceedhub.modules.participation.infrastructure;
+package com.mistysoft.proceedhub.modules.user.infrastructure;
 
-import com.mistysoft.proceedhub.modules.participation.domain.*;
+import com.mistysoft.proceedhub.modules.user.domain.*;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
