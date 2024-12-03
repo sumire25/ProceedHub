@@ -16,12 +16,12 @@ java {
 sourceSets {
     main {
         java {
-            srcDirs = ['src/main']
+            srcDirs = ['src/main/java']
         }
     }
     test {
         java {
-            srcDirs = ['src/test']
+            srcDirs = ['src/java/test']
         }
     }
 }
