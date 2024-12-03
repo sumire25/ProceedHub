@@ -16,3 +16,7 @@ spring:
 
 server:
   port: ${PORT}
+
+jwt:
+    secret: ${JWT_TOKEN}
+    expiration: ${JWT_EXPIRATION}
