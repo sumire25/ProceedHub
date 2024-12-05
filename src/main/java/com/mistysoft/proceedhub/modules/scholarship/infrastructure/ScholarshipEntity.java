@@ -13,31 +13,31 @@ import java.util.Set;
 public class ScholarshipEntity {
 
     @Id
-    private final String id;
+    private String id;
 
     @Column(nullable = false)
-    private final String title;
+    private String title;
     
     @Column(nullable = false)
-    private final String description;
+    private String description;
 
     @Column(nullable = false)
-    private final ZonedDateTime date;
+    private ZonedDateTime date;
 
     @Column(nullable = false)
-    private final String image;
+    private String image;
 
     @Column(nullable = false)
-    private final String country;
+    private String country;
 
     @Column(nullable = false)
-    private final String continent;
+    private String continent;
 
     @Column(nullable = false)
-    private final String moreInfo;
+    private String moreInfo;
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "scholarship_requirements", joinColumns = @JoinColumn(name = "scholarship_id"))
-    private final Set<Requirement> requirements;
+    private Set<Requirement> requirements;
 
 }
