@@ -29,7 +29,7 @@ class JpaUserRepositoryTest {
     }
 
     @Test
-    void save() {
+    void testSave() {
         User user = User.builder()
                 .id(new UserId("id"))
                 .username("username")
@@ -44,5 +44,18 @@ class JpaUserRepositoryTest {
         ArgumentCaptor<UserEntity> userEntityCaptor = ArgumentCaptor.forClass(UserEntity.class);
         verify(repository).save(userEntityCaptor.capture());
         assertEquals(userEntity, userEntityCaptor.getValue());
+    }
+
+    @Test
+    void testFindByUsername() {
+        String username = "username";
+        UserEntity userEntity = new UserEntity();
+        userEntity.setUsername(username);
+        when(repository.findByUsername(username)).thenReturn(Optional.of(userEntity));
+
+        Optional<User> result = jpaUserRepository.findByUsername(username);
+
+        assertTrue(result.isPresent());
+        assertEquals(username, result.get().getUsername());
     }
 }
